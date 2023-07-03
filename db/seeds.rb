@@ -52,7 +52,7 @@ Power.create(
 
 puts "No evil shall escape my sight."
 HeroPower.create(
-    power_id: 4,
+    power_id: 1,
     hero_id: 2,
     strength: "Average"
 )
@@ -60,11 +60,6 @@ HeroPower.create(
     power_id: 1,
     hero_id: 1,
     strength: "Strong"
-)
-HeroPower.create(
-    power_id: 2,
-    hero_id: 4,
-    strength: "Average"
 )
 HeroPower.create(
     power_id: 2,
@@ -72,7 +67,22 @@ HeroPower.create(
     strength: "Strong"
 )
 HeroPower.create(
+    power_id: 2,
+    hero_id: 4,
+    strength: "Average"
+)
+HeroPower.create(
     power_id: 3,
+    hero_id: 3,
+    strength: "Strong"
+)
+HeroPower.create(
+    power_id: 3,
+    hero_id: 2,
+    strength: "Average"
+)
+HeroPower.create(
+    power_id: 4,
     hero_id: 2,
     strength: "Average"
 )
@@ -87,24 +97,14 @@ HeroPower.create(
     strength: "Weak"
 )
 HeroPower.create(
-    power_id: 3,
-    hero_id: 3,
+    power_id: 4,
+    hero_id: 4,
     strength: "Strong"
-)
-HeroPower.create(
-    power_id: 1,
-    hero_id: 2,
-    strength: "Average"
 )
 HeroPower.create(
     power_id: 4,
     hero_id: 1,
     strength: "Average"
-)
-HeroPower.create(
-    power_id: 4,
-    hero_id: 4,
-    strength: "Strong"
 )
 
 puts "Let the battle begin!"
