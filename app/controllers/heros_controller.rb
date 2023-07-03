@@ -8,4 +8,5 @@ class HerosController < ApplicationController
         hero=Hero.find_by(id: params[:id])
         render json: hero, serializer: HeroWithPowersSerializer, status: :ok
     end
+    
 end
