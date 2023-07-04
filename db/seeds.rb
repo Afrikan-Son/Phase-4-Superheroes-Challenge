@@ -35,7 +35,7 @@ Hero.create(
 puts "In brightest day, in blackest night,"
 Power.create(
     name: "Ice Manipulation",
-    description: "Ability to control and manipulate ice, creating ice structures, freezing objects, and generating icy blasts."
+    description: "Ability to control and manipulate ice. Creating ice structures, freezing objects, and generating icy blasts."
 )
 Power.create(
     name: "Fire Control",
