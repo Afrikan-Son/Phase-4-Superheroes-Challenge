@@ -2,7 +2,7 @@ class PowersController < ApplicationController
 
 
     rescue_from ActiveRecord::RecordNotFound, with: :not_found_response
-    rescue_from ActiveModel::RecordInvalid, with : :unprocessable_entity_response
+    rescue_from ActiveRecord::RecordInvalid, with: :unprocessable_entity_response
     def index
         render json: Power.all, status: :ok
     end
@@ -14,7 +14,7 @@ class PowersController < ApplicationController
 
     def update
         power=Power.find_by!(id:params[:id])
-        power.update(description: params[:description])
+        power.update!(description: params[:description])
     end
 
     private
@@ -26,4 +26,5 @@ class PowersController < ApplicationController
     def unprocessable_entity_response(invalid)
         render json: {errors: invalid.record.errors.full_messages}, status: :unprocessable_entity
     end
+
 end
